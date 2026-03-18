@@ -116,6 +116,14 @@
             object-fit: cover; 
             display: block;
         }
+        .game-thumb {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
         .game-item:hover .game-thumb {
             border-color: var(--neon-blue);
             transform: translateY(-5px);
@@ -199,19 +207,16 @@
 
         <!-- Spesifikasi Teknik -->
         <div class="px-6 grid grid-cols-4 gap-2 mb-8">
-            <div class="bg-white/5 border border-white/10 rounded-lg p-2 text-center group hover:border-cyan-400 transition-colors">
+            <a href="#Spesifikasiplaybox" class="bg-white/5 border border-white/10 rounded-lg p-2 text-center group hover:border-cyan-400 transition-colors">
                 <i class="fas fa-gamepad text-cyan-400 text-xs mb-1"></i>
                 <p class="text-[7px] font-bold uppercase leading-tight">2 DS4 Stick</p>
-            </div>
-
-            <a href="#gamelist" class="bg-cyan-500/10 border border-cyan-400/50 rounded-lg p-2 text-center hover:bg-cyan-400/20 transition-all cursor-pointer">
-                <i class="fas fa-compact-disc text-cyan-400 text-xs mb-1"></i>
-                <p class="text-[7px] font-bold uppercase text-cyan-400">Games Update</p>
             </a>
+
             <div class="bg-white/5 border border-white/10 rounded-lg p-2 text-center group hover:border-cyan-400 transition-colors">
                 <i class="fas fa-bolt text-cyan-400 text-xs mb-1"></i>
                 <p class="text-[7px] font-bold uppercase leading-tight">Free Ongkir Wilayah Samarinda Kota</p>
             </div>
+            
             <a href="#gamelist" class="bg-cyan-500/10 border border-cyan-400/50 rounded-lg p-2 text-center hover:bg-cyan-400/20 transition-all cursor-pointer">
                 <i class="fas fa-compact-disc text-cyan-400 text-xs mb-1"></i>
                 <p class="text-[7px] font-bold uppercase text-cyan-400">Games Update</p>
@@ -230,10 +235,10 @@
             </a>
             
         <!-- Spesifikasi Palybox -->
-        <div id="gamelist" class="px-6 py-6 bg-black/20 border-t border-white/5">
+        <div id="Spesifikasiplaybox" class="px-6 py-6 bg-black/20 border-t border-white/5">
             <div class="flex items-center gap-3 mb-6">
                 <div class="h-[1px] flex-1 bg-cyan-400/30"></div>
-                <h2 class="title-font text-[12px] font-bold text-white uppercase tracking-widest">Game List</h2>
+                <h2 class="title-font text-[12px] font-bold text-white uppercase tracking-widest">Spesifikasi PlayBox</h2>
                 <div class="h-[1px] flex-1 bg-cyan-400/30"></div>
             </div>
  
