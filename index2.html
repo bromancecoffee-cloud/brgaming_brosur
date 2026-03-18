@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brosur Promosi PS4 - Main Puas Gak Pakai Mahal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@400;500;600;700&display=swap');
+        
+        :root {
+            --ps-blue: #00439c;
+            --ps-light-blue: #0072ce;
+            --neon-blue: #00f2ff;
+            --dark-bg: #000814;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            font-family: 'Rajdhani', sans-serif;
+            color: white;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 67, 156, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 242, 255, 0.05) 0%, transparent 40%);
+        }
+
+        .title-font { font-family: 'Orbitron', sans-serif; }
+
+        .gaming-card {
+            background: rgba(2, 12, 27, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 242, 255, 0.2);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gaming-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--neon-blue), transparent);
+            animation: scan 3s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .hero-gradient {
+            background: linear-gradient(180deg, var(--ps-blue) 0%, rgba(0, 8, 20, 0) 100%);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+        }
+
+        .price-tag {
+            background: linear-gradient(90deg, rgba(0, 114, 206, 0.2), rgba(0, 242, 255, 0.1));
+            border-left: 4px solid var(--neon-blue);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .price-tag:hover {
+            background: linear-gradient(90deg, rgba(0, 114, 206, 0.4), rgba(0, 242, 255, 0.2));
+            transform: scale(1.02) translateX(5px);
+            border-left-width: 8px;
+        }
+
+        .btn-booking {
+            background: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-booking::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(45deg);
+            transition: 0.5s;
+        }
+
+        .btn-booking:hover::after {
+            left: 120%;
+        }
+
+        .logo-glow {
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hexagon-bg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill='%2300f2ff' fill-opacity='0.05' d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9l11-6.35 11 6.35V30.1l-11 6.35-11-6.35V17.9z'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="p-4 flex justify-center items-center min-h-screen">
+
+    <div class="max-w-md w-full gaming-card rounded-[2rem] border-t-4 border-b-4 border-cyan-400">
+        
+        <!-- Header -->
+        <div class="relative pt-10 pb-6 px-8 text-center hexagon-bg hero-gradient">
+            <!-- Icon floating decoration -->
+            <div class="absolute top-4 left-4 opacity-20 text-4xl"><i class="fas fa-crosshairs text-cyan-400"></i></div>
+            <div class="absolute bottom-10 right-4 opacity-20 text-4xl"><i class="fas fa-microchip text-cyan-400"></i></div>
+
+            <!-- Logo & Brand Text -->
+            <div class="flex flex-col items-center mb-6">
+                <div class="w-20 h-20 bg-white rounded-3xl p-3 logo-glow flex items-center justify-center transform rotate-3 mb-3">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIABAMAAAAG7R+pAAAABGdBTUEAALGPC/xhBQAAACRQTFRFAAAA////gICAQEBAgICAQEBAQEBAQEBAQEBAQEBAQEBAQEBAxOxttAAAACV0Uk5TAAEMEhMWFhcXGBgbGx0fICAhIiQnKSstLjAxMjM0NTc7PD4/QEGeAn22AAAFNElEQVR4nO3dy27bRhSA4XNkUfIAbVogN923S7uogHZT9GmiAm3RpkW7KPoA0UUFOmiLNi0E6KbtokALAVooit5AtAtFoA8Q7UIR6ANE0y4U6X7Nf7ZkST7KzOHM0RzOfC+i5PkhxUfU2v6S80mH2m7YVfP6G493v9Zp/U3F59T6/pLT+nuKz6r1/S2n9fcVH1br+0dO6+8sPq7W96+c1t9bfGKt776c1t9bfGat756c1t9bfGqt756c1t9bfG6t7/ec1t9bfGGt70M5rb+3+NJa38dyWn9v8ZW1vp/ktP7e4mtrfWdyWn9v8Y21vofktP7e4ltrfWdyWn9v8Z21vsvktP7e4ntrfZfJaf29xQ9S07rYVNP6+4ofpaZ1uamm9fcV91LTutxU0/r7invmXyXN/+yZf5U0P1jcs0m7uXvV7K5137pL3U76T9962e7P7Wq7/35r1+7PrVv257Zp92er7s9Wm33L/v97Zp/T9p9vPmb/6X/S7v9uPmb/92rZ/+0p+/+6N+f/v9m6uGf1T96Y7v/T8+f2/6127P+L3uz/yV039//2zZ7v7Z45+7+vHf3f/3929n/u//36uGf104e7Z/pPnZt6z672H/W3uGv9O79T999v7f9YfO/6D//O+l8Wv6pX9W6767vV7mZ3e7u7vT26vWv9/v/V7u729m6N26N2f/8+3u7vXezX9r97u89p/69un9P+z26f0/73v69p/+u/z2n/5X/X6P9m1+S0/6M3G7f/f/S7W79T/9W/3Wv9O67H7f879/7m/t93u/U79Xv927zW39R/7fX+7Hff7f5u96X/Z6P/Y7//Y7//Y7//Y9/++8+p/2fv57T/Z6//Y9/++8+p/2dv/2Pf/nvv57T/869z2n/5f/f6P3btv/fc9v/09zn9r2/m9L++mdP++mZO++ubOe3v7+a0v76Z0/76Zk7765s57a9v5rS/vpnT/vpmTvvr65n/r+/v7++v57S/vr6Z0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+/v7+/v57T/vr6Z0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr69v5rS/vr6Z0/76+mZO++vrmzntr69n/r+7u7u7u7ue0/76+mZO++vrmzntr6+mZ09uX8+d0v7+/m9P99fXM6+8vPsV6/YVvD+vvKj6n1vaXnE861HbDrvrbX3I+6VDrDbtqXn/j8e7XOur+X+tueXvT7X7N7P/d6v777Z7v7Z45+/9m9v/tXv3f17X7f/Z+/w8v3oB6z9eF4AAAAABJRU5ErkJggg==" alt="BR Gaming Logo" class="logo-img">
+                </div>
+                <!-- Brand Text Under Logo -->
+                <div class="title-font text-2xl font-black text-white italic tracking-tighter leading-none mb-1 neon-text">
+                    BR GAMING
+                </div>
+            </div>
+
+            <h1 class="title-font font-bold text-white tracking-[1em] uppercase text-sm pb-1 px-4 neon-text">
+                PS4 Playbox
+            </h1>
+            <p class="text-cyan-400 font-bold tracking-[0.3em] uppercase text-[10px]">
+                Main Puas, Gak Pakai Mahal!</p>
+        </div>
+
+        <!-- Pricing Body -->
+        <div class="px-6 py-4 space-y-4">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="h-[2px] flex-1 bg-gradient-to-r from-transparent to-cyan-400/30"></div>
+                <h2 class="title-font text-[15px] font-bold text-cyan-400 uppercase tracking-widest">Price List</h2>
+                <div class="h-[2px] flex-1 bg-gradient-to-l from-transparent to-cyan-400/30"></div>
+            </div>
+
+            <!-- 24H -->
+            <div class="price-tag p-4 rounded-xl flex items-center justify-between group">
+                <div>
+                    <span class="text-[9px] text-cyan-400 font-bold uppercase block mb-0.5">Main Seharian Puas</span>
+                    <h3 class="title-font text-base font-bold">24 JAM </h3>
+                </div>
+                <div class="text-right">
+                    <p class="text-xl font-bold text-white tracking-tighter">Rp 120K</p>
+                    <span class="text-[10px] text-gray-400 font-bold italic">Terlaris</span>
+                </div>
+            </div>
+
+            <!-- 3 DAYS -->
+            <div class="price-tag p-4 rounded-xl flex items-center justify-between group border-l-cyan-500 bg-cyan-950/20">
+                <div class="absolute -top-2 left-4 bg-cyan-500 text-[8px] font-black text-black px-2 py-0.5 rounded uppercase">Best Value</div>
+                <div>
+                    <span class="text-[9px] text-cyan-400 font-bold uppercase block mb-0.5">Paket Weekend Seru</span>
+                    <h3 class="title-font text-base font-bold">3 HARI </h3>
+                </div>
+                <div class="text-right">
+                    <p class="text-xl font-bold text-white tracking-tighter">Rp 320K</p>
+                    <span class="text-[9px] text-green-400 font-bold italic">Hemat Rp 40.000</span>
+                </div>
+            </div>
+
+            <!-- 1 WEEK -->
+            <div class="price-tag p-4 rounded-xl flex items-center justify-between group border-l-yellow-500">
+                <div>
+                    <span class="text-[9px] text-yellow-500 font-bold uppercase block mb-0.5">Super Hemat</span>
+                    <h3 class="title-font text-base font-bold">1 MINGGU </h3>
+                </div>
+                <div class="text-right">
+                    <p class="text-xl font-bold text-white tracking-tighter">Rp 620K</p>
+                    <span class="text-[9px] text-yellow-500/80 font-bold">Hanya 88K / Hari</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Specs / Features -->
+        <div class="px-6 grid grid-cols-4 gap-2 mb-8">
+            <div class="bg-white/5 border border-white/10 rounded-lg p-2 text-center group hover:border-cyan-400 transition-colors">
+                <i class="fas fa-gamepad text-cyan-400 text-xs mb-1"></i>
+                <p class="text-[7px] font-bold uppercase leading-tight">2 Controller Dualshock 4</p>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-lg p-2 text-center group hover:border-cyan-400 transition-colors">
+                <i class="fas fa-bolt text-cyan-400 text-xs mb-1"></i>
+                <p class="text-[7px] font-bold uppercase leading-tight">Free Ongkir Wilayah Samarinda Kota</p>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-lg p-2 text-center group hover:border-cyan-400 transition-colors">
+                <i class="fas fa-compact-disc text-cyan-400 text-xs mb-1"></i>
+                <p class="text-[7px] font-bold uppercase leading-tight">Games Update</p>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-lg p-2 text-center group hover:border-cyan-400 transition-colors">
+                <i class="fas fa-shield-alt text-cyan-400 text-xs mb-1"></i>
+                <p class="text-[7px] font-bold uppercase leading-tight">Best Service</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-black/40 px-8 py-8 border-t border-white/5">
+            <a href="https://wa.me/62895700228872?text=Halo%20Bromance!%20Saya%20ingin%20booking%20PS4." target="_blank" 
+               class="btn-booking w-full py-4 rounded-xl flex items-center justify-center gap-3 group">
+                <i class="fab fa-whatsapp text-xl group-hover:rotate-12 transition-transform"></i>
+                <span class="title-font font-bold uppercase tracking-widest text-xs">Inisiasi Booking</span>
+            </a>
+
+            <div class="mt-8 flex justify-between items-center text-gray-500">
+                <div class="flex items-center gap-2">
+                    <i class="fab fa-instagram text-pink-500 text-xs"></i>
+                    <span class="text-[10px] font-bold tracking-tighter">bromance_coffee</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-phone-alt text-cyan-500 text-xs"></i>
+                    <span class="text-[10px] font-bold tracking-tighter">0895-7002-28872</span>
+                </div>
+            </div>
+            <p class="text-[8px] text-center mt-6 text-white/20 uppercase tracking-[0.4em] font-bold">Transmission Secured • Syarat Berlaku</p>
+        </div>
+    </div>
+
+</body>
+</html>
